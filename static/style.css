@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: sans-serif;
+}
+/*--------------------Navigation bar-------------------------*/
+#nav-bar{
+    position:sticky;
+    top:0;
+    z-index: 10;
+}
+.navbar{
+    background-image:linear-gradient(to right,#aaf0d1,#008080);
+}
+
+.navbar-nav{
+    margin-left:55%;
+}
+.navbar-nav li{
+    padding:0 11px;
+    border-radius:20px;
+    transition:0.5s;
+    float:left;
+}
+
+.navbar-nav li a:hover{
+    background:white;
+    color:#008080;
+    border-radius:20px;
+}
+.navbar-nav li a:hover{
+   
+    color:#008080 !important;
+   
+}
+.navbar-nav li a{
+    color:#fff !important;
+    font-size:20px;
+    font-weight: 600;
+    transition:0.5s
+}
+/*.navbar-brand  h3{
+    color:#fff;
+    margin-left:30px;
+    font-size:50px;
+    font-family: 'Bangers', cursive;
+}*/
+.navbar-brand img{
+    
+    height:100px;
+    width:210px;
+    margin-left:10%;
+}
+
+/*-------------------------Banner------------------------------------*/
+#banner{
+    background-image:linear-gradient(to right,#aaf0d1,#008080);
+    color:#fff;
+    padding-top:1%;
+}
+.promo-title{
+    font-size:50px;
+    font-weight:600;
+    margin-top:100px;
+}
+.promo-info{
+    font-size: 20px;
+}
+
+.img-fluid{
+    height:5px;
+    
+}
+.bottom-img{
+    width:100%;
+}
+
+/*---------------------------Summary----------------------------------*/
+#summary{
+    padding-top:6%;
+}
+
+#summary h2{
+    color:#008080;
+    margin-left:43%;
+    font-family: 'Lora', serif;
+}
+.container{
+    padding-top:5%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px;
+}
+.col-type{
+    height:400px;
+    background:#008080;
+    border-radius:20px;
+}
+
+.input-group{
+    margin-top:15%;
+    max-width:75%;
+    margin-left:10%;
+    border:none;
+    
+}
+.input-group .submit-btn {
+    background:#29f87f;
+    color:#fff;
+    border-radius: 0 5px 5px 5px;
+    border:none;
+    padding:5px 5px;
+    font-family: Raleway;
+}
+.input-group .form-control{
+    background:#fff;
+    border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.col-type img{
+    height:150px;
+    margin-left:33%;
+    margin-top:10%;
+}
+.title-summary::before{
+    content:'';
+    background:linear-gradient(to right,#aaf0d1,#008080);
+    height:5px;
+    width:200px;
+    display:block;
+    transform:translateY(63px);
+}
+
+/*---------------------------------Information-------------------------------------*/
+
+#information{
+    padding-top:6%;
+}
+#information h2{
+    color:#008080;
+    margin-left:45%;
+    font-family: 'Lora', serif;
+}
+.container1{
+    padding-top:5%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px;
+}
+
+.info-type{
+    padding-top:3%;
+    margin-left:20%;
+}
+.info-type img{
+    height:60px;
+    margin-left:22%;
+    
+}
+.info-type h4{
+    margin-left:10%;
+}
+.title-info::before{
+    content:'';
+    background:linear-gradient(to right,#aaf0d1,#008080);
+    height:5px;
+    width:200px;
+    margin-left:-7%;
+    display:block;
+    transform:translateY(63px);
+}
+
+/*-------------------------------About us-------------------------------------*/
+
+#about{
+    padding-top:6%;
+}
+
+#about h2{
+    color:#008080;
+    margin-left:43%;
+    font-family: 'Lora', serif; 
+}
+#about p{
+    padding-top:6%;
+    margin-left:27%;
+    font-size:20px;
+}
+.container2{
+    padding-top:5%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px;
+    
+
+}
+.person{
+    padding-top:3%;
+    margin-left:25%;
+    
+}
+.about-title::before{
+    content:'';
+    background:linear-gradient(to right,#aaf0d1,#008080);
+    height:5px;
+    width:202px;
+    margin-left:-3.5%;
+    display:block;
+    transform:translateY(63px);
+}
+
+/*------------------------------Contact us-------------------------------------*/
+
+#contact{
+    background-image:linear-gradient(to right,#aaf0d1,#008080);
+}
+.container3{
+    padding-top:3%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px;
+}
+
+.contact-type h4{
+    color:white;
+    margin-left:22%;
+}
+.icons{
+    list-style:none;
+    display:inline-block;
+    padding:10px;
+    letter-spacing: 20px;
+    margin-left:18%;
+    padding-top:3%;
+}
+.icons img{
+    height:50px;
+}
+.contact-type .form-contact{
+    box-shadow:none;
+    border:none;
+    margin-top:25px;
+    max-width:100px;
+}
+.contact-type .btn-primary{
+    box-shadow:none !important;
+    border:none;
+    margin-top:30px;
+}
+
