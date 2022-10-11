@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMer</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <!----------------title font---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <!-----------------Logo font------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <!-------------------Upload font---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='M_MER__1_-removebg-preview.png') }}"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              <li><a class="nav-link" href="#top">Home</a></li>
+              <li><a class="nav-link" href="#summary">Summarize</a></li>
+              <li><a class="nav-link" href="#information">Info</a></li>
+              <li><a class="nav-link" href="#about">About Us</a></li>
+              <li><a class="nav-link" href="#contact">Contact Us</a></li>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!----------------------------Banner-------------------------------------------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">CREATE YOUR OWN SUMMARY</p>
+                    <p class="promo-info">Upload videos,audios and text files to create the summary</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{{url_for('static',filename='home_img.png') }}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <img src="{{url_for('static',filename='wave1.png') }}" class="bottom-img">
+    </section>
+
+    <!--------------------------------Summarize-------------------------------------------------->
+    <section id="summary">
+       <h2 class="title-summary">SUMMARIZE</h2>
+            <div class="container">
+                <form method="post" action="/uploads" enctype="multipart/form-data">
+                <div class="col-type">
+                    <img src="{{url_for('static',filename='video-marketing.png') }}">
+                    
+                    <!-- <div class="file-upload-wrapper" data-text="Select your file!">
+                      <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                    </div>
+                    <button type="button" class="upload-btn">SUBMIT</button> -->
+
+                    <div class="input-group">
+                      <input type="file" name="file1" class="form-control"   aria-label="Upload">
+                      <button class="submit-btn" type="submit" name="submit">Submit</button>
+                    </div>
+                </div></form>
+                <form method="post" action="/uploads" enctype="multipart/form-data">
+                <div class="col-type">
+                    <img src="{{url_for('static',filename='video-and-audio.png') }}">
+
+
+                    <div class="input-group">
+                      <input type="file" name="file1" class="form-control"   aria-label="Upload">
+                      <button class="submit-btn" type="submit" name="submit">Submit</button>
+                    </div>
+                    
+                </div></form>
+                <form method="post" action="/uploads" enctype="multipart/form-data">
+                <div class="col-type">
+                    <img src="{{url_for('static',filename='note.png') }}">
+                    <div class="input-group">
+                      <input type="file" name="file1" class="form-control"   aria-label="Upload">
+                      <button class="submit-btn" type="submit" name="submit">Submit</button>
+                    </div>
+                    
+                </div>
+                </form>
+            </div>
+
+        
+    </section>
+
+    <!--------------------------------------Information-------------------------------------------->
+    <section id="information">
+      <h2 class="title-info">Info</h2>
+      <div class="container1">
+        <div class="info-type">
+          <img src="{{url_for('static',filename='lightbulb.png') }}">
+          <h4>How To Use</h4>
+          <p>Just upload the desired file in video,audio or text form and the application will automatically convert it into the summarized text file which you can download</p>
+        </div>
+        <div class="info-type">
+          <img src="{{url_for('static',filename='like.png') }}">
+          <h4>Perform on all devices</h4>
+          <p>You do not need to register or install a software. The MOMer works perfectly on all devices and popular browsers: IE, Firefox, Chrome & Opera.</p>
+        </div>
+        <div class="info-type">
+          <img src="{{url_for('static',filename='upload.png') }}">
+          <h4>Easy to access</h4>
+          <p>Application is really very easy to access from any platform just need access to internet connection and the your good to go</p>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------About us----------------------------------------->
+    <section id="about">
+      <h2 class="about-title">About Us</h2>
+      <p>We are a small group of developers from Pune Institute Of Computer Technology</p>
+      <div class="container2">
+        <div class="person">
+          <h6>Shrikant Badgaonkar</h6>
+          
+        </div>
+        <div class="person">
+          <h6>Shivam Dhonde</h6>
+         
+        </div>
+        <div class="person">
+          <h6>Ameya Ghadge</h6>
+          
+        </div>
+        <div class="person">
+          <h6>Atharva Joshi</h6>
+         
+        </div>
+        <div class="person">
+          <h6>Sanhita Kulkarni</h6>
+          
+        </div>
+      </div>
+      
+    </section>
+
+    <!-------------------------------Contact us----------------------------------------->
+    <section id="contact">
+      <img src="{{url_for('static',filename='wave2n.png') }}">
+      <div class="container3">
+        <div class="contact-type">
+          <h4>Follow us on</h4>
+          <div class="icons">
+            <img src="{{url_for('static',filename='github.png') }}">
+            <img src="{{url_for('static',filename='linkedin.png') }}">
+            <img src="{{url_for('static',filename='instagram.png') }}">
+          </div>
+        </div>
+        <div class="contact-type">
+          <h4>Get in touch</h4>
+          <input type="email" class="form-control" placeholder="Your Email id">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </section>
+    <!----------------------smooth scroll------------------------->
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
