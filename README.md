@@ -12,3 +12,4 @@ run the server\
 `flask run`\
 upload any transcript and done!
 
+*courtsey to the developers of takahe library tysm
